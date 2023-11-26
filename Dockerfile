@@ -2,11 +2,11 @@ FROM node:lts
 
 WORKDIR /usr/src/app
 
-RUN npm install -g next
+RUN npm install -g next netlify-cli
 
 COPY package*.json ./
 
-RUN npm ci --only=production
+RUN yarn install
 
 COPY . .
 

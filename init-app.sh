@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ ! -d "/usr/src/app/node_modules" ]; then
-  npm install
+  yarn install
 fi
 
 if [ "$NODE_ENV" = "production" ]; then
-  npm run build && npm run export
+  yarn build && yarn export
 else
-  npm run dev
+  yarn dev
 fi
