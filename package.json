@@ -2,11 +2,13 @@
   "name": "stylium",
   "version": "1.0.0",
   "author": "Michaël Mondou",
+  "license": "MIT",
   "homepage": "https://www.stylium.fr",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export"
+    "export": "next export",
+    "lint": "next lint"
   },
   "dependencies": {
     "cypress": "^13.4.0",
@@ -15,6 +17,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.3",
     "netlify-plugin-cypress": "2.2.1"
   }
 }
