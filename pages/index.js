@@ -1,143 +1,128 @@
-import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import Hero from "@components/Hero";
 import Section from "@components/Section";
 import Image from "next/image";
+import Hero from "@components/Hero";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Stylium</title>
-        <link rel="icon" href="/favicon.ico"/>
-        <meta name="description" content="Stylium"/>
-      </Head>
-
-      <Header/>
-
-      <main>
-        <Hero/>
-        <Section
-          title="Les services de Stylium"
-          introduction="Avec plus de 6 années à tisser des histoires de beauté et à créer des moments uniques, Stylium
+    <>
+      <Hero/>
+      <Section
+        title="Les services de Stylium"
+        introduction="Avec plus de 6 années à tisser des histoires de beauté et à créer des moments uniques, Stylium
             est l&apos;endroit où votre beauté devient une histoire à raconter. Du maquillage événementiel qui
             célèbre vos moments spéciaux à l&apos;onglerie qui exprime votre style personnel, chaque prestation
             est une invitation à créer ensemble une histoire de beauté qui vous ressemble."
-          subsections={[
-            {
-              left: (
-                <>
-                  <h3>Maquillage événementiel</h3>
+        subsections={[
+          {
+            left: (
+              <>
+                <h3>Maquillage événementiel</h3>
 
-                  <p>
+                <p>
                     En tant que professionnelle de l&apos;esthétique avec plus de 6 ans
                     d&apos;expérience, je me
                     spécialise dans le maquillage événementiel sur mesure, apportant une touche
                     unique à chaque occasion.
-                  </p>
+                </p>
 
-                  <h4>Un service personnalisé</h4>
+                <h4>Un service personnalisé</h4>
 
-                  <p>
+                <p>
                     Chez Stylium, chaque coup de pinceau est pensé en fonction de vos envies. Mon
                     approche sur
                     mesure garantit que votre maquillage événementiel reflète votre personnalité et
                     s&apos;harmonise
                     parfaitement avec le thème de votre occasion spéciale.
-                  </p>
+                </p>
 
-                  <h4>Des moments inoubliables</h4>
+                <h4>Des moments inoubliables</h4>
 
-                  <p>
+                <p>
                     Que ce soit pour votre mariage, une séance photo professionnelle captivante ou
                     un défilé de mode,
                     Stylium transforme chaque moment en une expérience de beauté inoubliable. Chaque
                     détail est
                     soigneusement considéré pour que vous soyez resplendissante lors de vos moments
                     les plus précieux.
-                  </p>
+                </p>
 
-                  <h4>Mobilité régionale</h4>
+                <h4>Mobilité régionale</h4>
 
-                  <p>
+                <p>
                     Parcourant la magnifique région de la Nouvelle-Aquitaine, Stylium apporte son
                     expertise
                     directement à votre porte. Que vous vous trouviez au cœur de Bordeaux, sur les
                     plages de
                     Biarritz, ou dans les vignobles de Saint-Émilion, je me déplace pour vous offrir
                     une expérience beauté exceptionnelle.
-                  </p>
+                </p>
 
-                  <h4>Réservez dès aujourd&apos;hui</h4>
+                <h4>Réservez dès aujourd&apos;hui</h4>
 
-                  <p>
+                <p>
                     Parce que votre beauté mérite une attention exceptionnelle, réservez dès
                     maintenant votre session
                     de maquillage événementiel avec Stylium. Laissez-moi créer l&apos;histoire de
                     votre beauté, mèches de pinceaux après mèches de pinceaux.
-                  </p>
-                </>
-              ),
-              right: (
-                <Image src="/sections/section-maquillage.png" alt="Maquillage de mariée" width={684}
-                  height={480}/>
-              )
-            },
-            {
-              mobileInverted: true,
-              left: (
-                <Image src="/sections/section-ongles.png" alt="Nail art" width={684} height={480}/>
-              ),
-              right: (
-                <>
-                  <h3>Onglerie / Nail Art</h3>
+                </p>
+              </>
+            ),
+            right: (
+              <Image src="/sections/section-maquillage.png" alt="Maquillage de mariée" width={684}
+                height={480}/>
+            )
+          },
+          {
+            mobileInverted: true,
+            left: (
+              <Image src="/sections/section-ongles.png" alt="Nail art" width={684} height={480}/>
+            ),
+            right: (
+              <>
+                <h3>Onglerie / Nail Art</h3>
 
-                  <p>
+                <p>
                     Vos ongles méritent une attention particulière. Laissez-moi les transformer en
                     œuvres d&apos;art uniques grâce à des designs créatifs et des couleurs éclatantes qui complètent
                     votre style.
-                  </p>
+                </p>
 
-                  <h4>Créations personnalisées</h4>
+                <h4>Créations personnalisées</h4>
 
-                  <p>
+                <p>
                     Votre style, votre personnalité - chaque session d&apos;onglerie chez Stylium est une
                     collaboration pour créer des designs personnalisés qui reflètent votre essence
                     individuelle.
-                  </p>
+                </p>
 
-                  <h4>Éclat et élégance</h4>
+                <h4>Éclat et élégance</h4>
 
-                  <p>
+                <p>
                     De la simplicité sophistiquée aux créations audacieuses, Stylium sublime vos
                     mains avec des œuvres d&apos;art sur chaque ongle. Laissez vos mains rayonner d&apos;éclat
                     et d&apos;élégance.
-                  </p>
+                </p>
 
-                  <h4>Exclusivement dans Bordeaux Métropole</h4>
+                <h4>Exclusivement dans Bordeaux Métropole</h4>
 
-                  <p>
+                <p>
                     Stylium se consacre à apporter l&apos;art de l&apos;onglerie et du nail art à votre porte,
                     au cœur de la belle Bordeaux Métropole. Découvrez une expérience de beauté
                     personnalisée sans quitter votre quartier.
-                  </p>
+                </p>
 
-                  <h4>Réservez votre session</h4>
+                <h4>Réservez votre session</h4>
 
-                  <p>
+                <p>
                     Offrez à vos mains l&apos;attention qu&apos;elles méritent. Réservez dès aujourd&apos;hui votre
                     session d&apos;onglerie et de nail art exclusivement dans Bordeaux Métropole avec
                     Stylium.
-                  </p>
-                </>
-              )
-            }
-          ]}
-        />
-      </main>
-
-      <Footer/>
-    </div>
+                </p>
+              </>
+            )
+          }
+        ]}
+      />
+    </>
   );
 }

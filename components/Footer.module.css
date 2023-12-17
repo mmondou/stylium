@@ -4,5 +4,5 @@
     max-width: var(--content-max-width);
     justify-content: center;
     gap: 4.8rem;
-    padding-bottom: 2.4rem;
+    padding: 2.4rem;
 }
