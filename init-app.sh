@@ -5,7 +5,7 @@ if [ ! -d "/usr/src/app/node_modules" ]; then
 fi
 
 if [ "$NODE_ENV" = "production" ]; then
-  yarn build && yarn export
+  yarn build
 else
-  yarn dev
+  netlify dev
 fi

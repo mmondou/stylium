@@ -1,0 +1,81 @@
+body {
+    background: var(--color-surface-body);
+    color: var(--color-text-body);
+    font-family: var(--font-family-text);
+    font-size: 1.8rem;
+    letter-spacing: 0.005em;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+    padding: 0 2.4rem;
+}
+
+h1, .h1 {
+    margin: 0;
+    font-family: var(--font-family-heading);
+    font-size: 10rem;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+}
+
+h2, .h2 {
+    margin: 0;
+    font-family: var(--font-family-heading);
+    font-size: 6.2rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+h3, .h3 {
+    margin: 0;
+    font-family: var(--font-family-heading);
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.highlighted {
+    font-family: var(--font-family-heading);
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+}
+
+.btn {
+    position: relative;
+    padding: 1rem 2.4rem;
+    background: var(--color-surface-primary);
+    border-radius: 0.4rem;
+    color: var(--color-text-on-primary);
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 200ms;
+    transition-property: background-color;
+}
+
+.btn:hover::after {
+    background-color: var(--color-state-layer-on-primary);
+}
+
+@media screen and (min-width: 620px) {
+    .btn {
+        width: fit-content;
+        justify-content: flex-start;
+    }
+}
+

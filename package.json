@@ -11,12 +11,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mui/base": "^5.0.0-beta.24",
     "next": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^1.5.1",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3"
   }

@@ -1,0 +1,26 @@
+:root {
+    --color-palette-white: #ffffff;
+    --color-palette-black: #010101;
+    --color-palette-jet: #36343B;
+    --color-palette-bittersweet-shimmer: #C84545;
+    --color-palette-lion: #A88D59;
+
+    --color-surface-primary: var(--color-palette-lion);
+    --color-surface-body: var(--color-palette-black);
+    --color-surface-field: var(--color-palette-jet);
+
+    --color-text-on-primary: var(--color-palette-white);
+    --color-text-primary: var(--color-palette-lion);
+    --color-text-error: var(--color-palette-bittersweet-shimmer);
+    --color-text-body: var(--color-palette-white);
+
+    --color-state-layer-on-primary: rgba(255, 255, 255, 0.08);
+    --color-state-layer-primary: rgba(186, 157, 102, 0.08);
+
+    --color-border-error: var(--color-text-error);
+
+    --font-family-text: 'Roboto', sans-serif;
+    --font-family-heading: 'Playfair Display', serif;
+
+    --content-max-width: 1344px;
+}
