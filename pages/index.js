@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Hero/>
       <Section
+        id="services"
         title="Les services de Stylium"
         introduction="Avec plus de 6 années à tisser des histoires de beauté et à créer des moments uniques, Stylium
             est l&apos;endroit où votre beauté devient une histoire à raconter. Du maquillage événementiel qui
@@ -126,6 +127,7 @@ export default function Home() {
         ]}
       />
       <Section
+        id="rendez-vous"
         title="Prenez rendez-vous"
         narrow
         introduction="Votre moment de beauté personnalisé est à portée de clic. Réservez dès maintenant votre session
