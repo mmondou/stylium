@@ -10,10 +10,15 @@ export default function Form() {
     event.preventDefault()
     setIsLoading(true)
 
-    const formData = new FormData(event.target)
+    const formData = new FormData(event.target);
+    const value = Object.fromEntries(formData.entries());
+
     await fetch('/api/submit', {
       method: 'POST',
-      body: formData,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(value),
     })
       .then((response) => {
         setSuccess(response.ok)
