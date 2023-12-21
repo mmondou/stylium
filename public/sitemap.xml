@@ -1,12 +1,15 @@
-<xml version="1.0" encoding="UTF-8">
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
-            <loc>https://www.stylium.fr</loc>
-            <lastmod>2023-12-21</lastmod>
-        </url>
-        <url>
-            <loc>https://www.stylium.fr/cgu</loc>
-            <lastmod>2023-12-21</lastmod>
-        </url>
-    </urlset>
-</xml>
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.stylium.fr</loc>
+        <lastmod>2023-12-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://www.stylium.fr/cgu</loc>
+        <lastmod>2023-12-21</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0</priority>
+    </url>
+</urlset>
