@@ -2,6 +2,10 @@
     color: var(--color-text-primary);
 }
 
+html {
+    background: var(--color-surface-body);
+}
+
 body {
     background: var(--color-surface-body);
     color: var(--color-text-body);
@@ -80,10 +84,16 @@ a:hover {
     letter-spacing: 0.005em;
 }
 
+.highlighted:not(h1) + * {
+    margin-top: 4.8rem;
+}
+
 .btn {
     position: relative;
     padding: 1rem 2.4rem;
     background: var(--color-surface-primary);
+    border: var(--color-surface-primary);
+    cursor: pointer;
     border-radius: 0.4rem;
     color: var(--color-text-on-primary);
     text-decoration: none;
@@ -104,6 +114,11 @@ a:hover {
     transition-property: background-color;
 }
 
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .btn:hover::after {
     background-color: var(--color-state-layer-on-primary);
 }
@@ -111,6 +126,21 @@ a:hover {
 .narrow-container {
     max-width: 68rem;
     margin: 3.6rem auto;
+}
+
+.alert {
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    color: var(--color-text-body);
+    background: var(--color-surface-primary);
+}
+
+.alert--error {
+    background: var(--color-surface-error);
+}
+
+.alert + * {
+    margin-top: 2.4rem;
 }
 
 @media screen and (min-width: 620px) {

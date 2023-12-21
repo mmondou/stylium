@@ -5,6 +5,7 @@ services:
     build: .
     env_file:
       - .env
+      - .env.local
     volumes:
       - .:/usr/src/app
     ports:

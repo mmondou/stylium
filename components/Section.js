@@ -1,8 +1,8 @@
 import styles from "./Section.module.css";
 
-export default function Section({title, introduction, subsections}) {
+export default function Section({title, narrow, introduction, subsections, children}) {
   return (
-    <section className={styles.section}>
+    <section className={`${styles.section} ${narrow ? styles.section__narrow : ''}`}>
       <h2>{title}<span className="color-text-primary">.</span></h2>
       {introduction && <p className={styles.section__introduction}>{introduction}</p>}
       {subsections && subsections.map((subsection, index) => (
@@ -11,6 +11,7 @@ export default function Section({title, introduction, subsections}) {
           {subsection.right && <div className={styles.section__right}>{subsection.right}</div>}
         </div>
       ))}
+      {children}
     </section>
   );
 }

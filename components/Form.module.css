@@ -1,0 +1,44 @@
+.form__cols {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.form__cols + .form__row,
+.form__row + .form__cols {
+    margin-top: 2.4rem;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__row label {
+    margin-bottom: 0.8rem;
+}
+
+.label-optional {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.form__row input,
+.form__row select {
+    padding: 1.2rem 1.6rem 1.3rem;
+    border-radius: 0.4rem;
+    background: var(--color-surface-field);
+    color: var(--color-text-on-primary);
+    border: 1px solid var(--color-surface-field);
+}
+
+.form button[type="submit"] {
+    margin-top: 2.4rem;
+}
+
+@media screen and (min-width: 640px) {
+    .form__cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

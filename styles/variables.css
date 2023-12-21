@@ -6,6 +6,7 @@
     --color-palette-lion: #A88D59;
 
     --color-surface-primary: var(--color-palette-lion);
+    --color-surface-error: var(--color-palette-bittersweet-shimmer);
     --color-surface-body: var(--color-palette-black);
     --color-surface-field: var(--color-palette-jet);
 

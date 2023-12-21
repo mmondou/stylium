@@ -1,6 +1,8 @@
-import Section from "@components/Section";
 import Image from "next/image";
+
+import Section from "@components/Section";
 import Hero from "@components/Hero";
+import Form from "@components/Form";
 
 export default function Home() {
   return (
@@ -123,6 +125,15 @@ export default function Home() {
           }
         ]}
       />
+      <Section
+        title="Prenez rendez-vous"
+        narrow
+        introduction="Votre moment de beauté personnalisé est à portée de clic. Réservez dès maintenant votre session
+        de maquillage événementiel ou d'onglerie/nail art. Complétez le formulaire ci-dessous et laissez Stylium
+        créer l'histoire unique de votre beauté.">
+        <p className="highlighted">Votre beauté mérite d&apos;être révélée. Découvrons ensemble votre éclat unique !</p>
+        <Form />
+      </Section>
     </>
   );
 }
